@@ -1,0 +1,6 @@
+# Editors
+.vscode/
+.vim
+
+# Tools
+**/*.drawio

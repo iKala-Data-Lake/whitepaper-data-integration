@@ -1,0 +1,497 @@
+[
+  {
+    "name": "Macbook Pro (2017)",
+    "descriptions": "The ultimate pro notebook. MacBook Pro features faster processors ;upgraded memory;the Apple T2 chip;and a Retina display with True Tone technology.",
+    "options": [
+      {
+        "name": "Macbook Pro 13.3-inch",
+        "specs": "Macbook Pro 13.3-inch (diagonal) LED-backlit display with IPS technology; 2560-by-1600 native resolution at 227 pixels",
+        "price": "1299",
+        "quantity": "3",
+        "on_sale": "1",
+        "id": "1201"
+      },
+      {
+        "name": "Macbook Pro 15.4-inch",
+        "specs": "Macbook Pro 15.4-inch (diagonal) LED-backlit display with IPS technology; 2880-by-1800 native resolution at 220 pixels",
+        "price": "2199",
+        "quantity": "2",
+        "on_sale": "0",
+        "id": "1202"
+      }
+    ],
+    "_id": "1200",
+    "category": {
+      "id": "4000",
+      "name": "Laptops"
+    },
+    "vendor": {
+      "id": "5000",
+      "name": "Apple ",
+      "phone": "2569561656",
+      "email": "apple@gmail.com"
+    }
+  },
+  {
+    "name": "Iphone X",
+    "descriptions": "The iPhone X display is so immersive the device itself disappears into the experience. ",
+    "options": [
+      {
+        "name": "Iphone X 128GB",
+        "specs": "Iphone X Storage capacity 128 GB",
+        "price": "799",
+        "quantity": "5",
+        "on_sale": "1",
+        "id": "1401"
+      },
+      {
+        "name": "Iphone X 256GB",
+        "specs": "Iphone X Storage capacity 256 GB",
+        "price": "899",
+        "quantity": "7",
+        "on_sale": "0",
+        "id": "1402"
+      }
+    ],
+    "_id": "1400",
+    "category": {
+      "id": "4100",
+      "name": "Mobile phones"
+    },
+    "vendor": {
+      "id": "5100",
+      "name": "Microsoft ",
+      "phone": "6165486561",
+      "email": "microsoft@gmail.com"
+    }
+  },
+  {
+    "name": "Macbook Air (2015) ",
+    "descriptions": "MacBook Air lasts up to an incredible 12 hours between charges So from your morning coffee till your evening commute;you can work unplugged. When it\ufffds time to kick back and relax;you can get up to 12 hours of iTunes movie playback.",
+    "options": [
+      {
+        "name": "Macbook Air 11.6-inch",
+        "specs": "Macbook Air 11.6-inch (diagonal) LED-backlit glossy widescreen display with support for millions of colors",
+        "price": "999",
+        "quantity": "1",
+        "on_sale": "0",
+        "id": "1301"
+      },
+      {
+        "name": "Macbook Air 13-inch",
+        "specs": "Macbook Air 13.3-inch (diagonal) LED-backlit glossy widescreen display with support for millions of colors",
+        "price": "1099",
+        "quantity": "4",
+        "on_sale": "1",
+        "id": "1302"
+      }
+    ],
+    "_id": "1300",
+    "category": {
+      "id": "4000",
+      "name": "Laptops"
+    },
+    "vendor": {
+      "id": "5000",
+      "name": "Apple ",
+      "phone": "2569561656",
+      "email": "apple@gmail.com"
+    }
+  },
+  {
+    "name": "Iphone 8",
+    "descriptions": "iPhone 8 introduces a glass design. The glass back enables easy wireless charging.",
+    "options": [
+      {
+        "name": "Iphone 8 64GB",
+        "specs": "Iphone 8 Storage capacity 64 GB ",
+        "price": "599",
+        "quantity": "4",
+        "on_sale": "0",
+        "id": "1601"
+      },
+      {
+        "name": "Iphone 8 128GB",
+        "specs": "Iphone 8 Storage capacity 128 GB",
+        "price": "699",
+        "quantity": "7",
+        "on_sale": "1",
+        "id": "1602"
+      }
+    ],
+    "_id": "1600",
+    "category": {
+      "id": "4100",
+      "name": "Mobile phones"
+    },
+    "vendor": {
+      "id": "5100",
+      "name": "Microsoft ",
+      "phone": "6165486561",
+      "email": "microsoft@gmail.com"
+    }
+  },
+  {
+    "name": "Ipad Air",
+    "descriptions": "4th gen The iPad Air is unbelievably thin and light. And yet it is so much more powerful and capable",
+    "options": [
+      {
+        "name": "Ipad Air 9.7-inch",
+        "specs": "Ipad Air 9.7-inch (diagonal) LED-backlit Multi-Touch display with IPS technology",
+        "price": "899",
+        "quantity": "20",
+        "on_sale": "1",
+        "id": "1701"
+      },
+      {
+        "name": "Ipad Air 12-inch",
+        "specs": "Ipad Air 12-inch (diagonal) LED-backlit Multi-Touch display with IPS technology",
+        "price": "999",
+        "quantity": "9",
+        "on_sale": "0",
+        "id": "1702"
+      }
+    ],
+    "_id": "1700",
+    "category": {
+      "id": "4200",
+      "name": "Tablets"
+    },
+    "vendor": {
+      "id": "5200",
+      "name": "Lenovo ",
+      "phone": "3215689466",
+      "email": "lenovo@gmail.com"
+    }
+  },
+  {
+    "name": "Iphone 7",
+    "descriptions": "Great connectivity of this device includes Bluetooth 4.2 version with A2DP",
+    "options": [
+      {
+        "name": "Iphone 7 64GB",
+        "specs": "Iphone 7 Storage capacity 64 GB",
+        "price": "399",
+        "quantity": "8",
+        "on_sale": "0",
+        "id": "1501"
+      },
+      {
+        "name": "Iphone 7 32GB",
+        "specs": "Iphone 7 Storage capacity 32 GB",
+        "price": "499",
+        "quantity": "9",
+        "on_sale": "1",
+        "id": "1502"
+      }
+    ],
+    "_id": "1500",
+    "category": {
+      "id": "4100",
+      "name": "Mobile phones"
+    },
+    "vendor": {
+      "id": "5100",
+      "name": "Microsoft ",
+      "phone": "6165486561",
+      "email": "microsoft@gmail.com"
+    }
+  },
+  {
+    "name": "ESC8000 G3",
+    "descriptions": "G3 High-density GPU server with hybrid computing power. ASUS-patented Adaptable Topology design.",
+    "options": [
+      {
+        "name": "ESC8000 G3 - 8 G Intel Xeon E5-1603 V4(2.80GHz,140W,L3:10M)",
+        "specs": "ESC4000 G3 Server with 2U 4-GPU Hybrid Computing Power with Mass Storage Capability",
+        "price": "650",
+        "quantity": "4",
+        "on_sale": "1",
+        "id": "1901"
+      },
+      {
+        "name": "ESC8000 G3 - 8 G Intel Xeon E5-1620 v3 (3.5G,140W,L3:10M,4C,HT)",
+        "specs": "ESC8000 G4 Server with High-density 4U GPU server support 8 GPUs",
+        "price": "750",
+        "quantity": "6",
+        "on_sale": "0",
+        "id": "1902"
+      }
+    ],
+    "_id": "1900",
+    "category": {
+      "id": "4300",
+      "name": "Servers"
+    },
+    "vendor": {
+      "id": "5300",
+      "name": "Asus ",
+      "phone": "9568484613",
+      "email": "asus@gmail.com"
+    }
+  },
+  {
+    "name": "ESC8000 G4",
+    "descriptions": "G4 High performance ASUS 2U server with hybrid-storage design and high power-efficiency",
+    "options": [
+      {
+        "name": "ESC8000 G4 - 8 G Intel Xeon E5-1603 v3 (3.5G,140W,L3:10M,4C,HT)",
+        "specs": "RS100-E8-PI2 Server with Smart compact 1U server",
+        "price": "450",
+        "quantity": "1",
+        "on_sale": "0",
+        "id": "2001"
+      },
+      {
+        "name": "ESC8000 G4 - 8 G Intel Xeon E5-1620 v3 (3.5G,140W,L3:10M,4C,HT)",
+        "specs": "RS300-E9-PI4 Server with Flagship Model with Versatile Expandability",
+        "price": "550",
+        "quantity": "2",
+        "on_sale": "1",
+        "id": "2002"
+      }
+    ],
+    "_id": "2000",
+    "category": {
+      "id": "4300",
+      "name": "Servers"
+    },
+    "vendor": {
+      "id": "5300",
+      "name": "Asus ",
+      "phone": "9568484613",
+      "email": "asus@gmail.com"
+    }
+  },
+  {
+    "name": "XPS 13 - 5080",
+    "descriptions": "Thinner and more powerful than ever the Dell XPS reinforces its lofty standing with an 8th Gen Intel Core processor immaculate 4K UHD display, and super-slim build.",
+    "options": [
+      {
+        "name": "XPS 13 - 5080 8GB LPDDR3 1866MHz",
+        "specs": "Dell XPS 13 PC with 13.3-inch Intel Core i5-8250U. 8GB memory/128GB SSD",
+        "price": "1250",
+        "quantity": "7",
+        "on_sale": "1",
+        "id": "2101"
+      },
+      {
+        "name": "XPS 13 - 5080 16GB LPDDR3 1866MHz",
+        "specs": "Dell XPS 15 PC with 15.6-inch Intel Core i5-7300HQ. 8GB memory/256GB SSD",
+        "price": "1650",
+        "quantity": "1",
+        "on_sale": "0",
+        "id": "2102"
+      }
+    ],
+    "_id": "2100",
+    "category": {
+      "id": "4400",
+      "name": "PC"
+    },
+    "vendor": {
+      "id": "5400",
+      "name": "Dell ",
+      "phone": "8465473132",
+      "email": "dell@gmail.com"
+    }
+  },
+  {
+    "name": "XPS 15 - 5070",
+    "descriptions": "Ultra-thin and distinctly refined the stylish Dell Inspiron gives definitive elegance to a powerful and expansive PC experience.",
+    "options": [
+      {
+        "name": "XPS 15- 5070 256GB PCIe Solid State Drive",
+        "specs": "Dell Inspiron 15 PC with 15.6-inch Full HD. Intel Core i5-8250U. 8GB memory/1TB HDD",
+        "price": "600",
+        "quantity": "10",
+        "on_sale": "0",
+        "id": "2201"
+      },
+      {
+        "name": "XPS 15- 5070 500GB PCIe Solid State Drive",
+        "specs": "Dell Inspiron 24 PC with 23.8-in Full HD. Intel Core i5-7200U. 8GB memory/1TB SATA",
+        "price": "700",
+        "quantity": "50",
+        "on_sale": "1",
+        "id": "2202"
+      }
+    ],
+    "_id": "2200",
+    "category": {
+      "id": "4400",
+      "name": "PC"
+    },
+    "vendor": {
+      "id": "5400",
+      "name": "Dell ",
+      "phone": "8465473132",
+      "email": "dell@gmail.com"
+    }
+  },
+  {
+    "name": "Monoprice Ultra Slim Series High Speed HDMI Cable",
+    "descriptions": "The Monoprice Ultra Slim Active High Speed HDMI Cable series is designed with the thinnest TVs in mind",
+    "options": [
+      {
+        "name": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 1ft",
+        "specs": "Monoprice Ultra Slim 24Hz High Speed HDMI Cable, 10Gbps, 36AWG, YUV 4:2:0, 6ft, Black",
+        "price": "15",
+        "quantity": "40",
+        "on_sale": "0",
+        "id": "2301"
+      },
+      {
+        "name": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 1.5ft",
+        "specs": "Monoprice Ultra Slim 60Hz High Speed HDMI Cable, 18Gbps, 40AWG, YUV 6:4:0, 8ft, Black",
+        "price": "25",
+        "quantity": "30",
+        "on_sale": "1",
+        "id": "2302"
+      }
+    ],
+    "_id": "2300",
+    "category": {
+      "id": "4500",
+      "name": "Cables"
+    },
+    "vendor": {
+      "id": "5500",
+      "name": "Monoprice ",
+      "phone": "3189831684",
+      "email": "monoprice@gmail.com"
+    }
+  },
+  {
+    "name": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K",
+    "descriptions": "Monoprice Commercial Cable supports the following HDMI features: 4K resolution at 24Hz. 3D video. ",
+    "options": [
+      {
+        "name": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 3ft",
+        "specs": "Monoprice Commercial 32Hz High Speed HDMI Cable, 10Gbps, 24AWG, CL2, 6ft, Black",
+        "price": "10",
+        "quantity": "1",
+        "on_sale": "0",
+        "id": "2401"
+      },
+      {
+        "name": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 5ft",
+        "specs": "Monoprice Commercial 80Hz High Speed HDMI Cable, 18Gbps, 40AWG, CL2, 8ft, Black",
+        "price": "20",
+        "quantity": "10",
+        "on_sale": "0",
+        "id": "2402"
+      }
+    ],
+    "_id": "2400",
+    "category": {
+      "id": "4500",
+      "name": "Cables"
+    },
+    "vendor": {
+      "id": "5500",
+      "name": "Monoprice ",
+      "phone": "3189831684",
+      "email": "monoprice@gmail.com"
+    }
+  },
+  {
+    "name": "Avantree HT3189 Wireless Headphones",
+    "descriptions": "Avantree HT3189 Wireless Headphones for TV Watching & PC Gaming with Bluetooth",
+    "options": [
+      {
+        "name": "COWIN E7 PRO - Black",
+        "specs": "1000XM1 Wireless Headphones 20 Hz20,000 Hz (44 kHz Sampling)/ 20 Hz40,000 Hz (LDAC 96 kHz Sampling, 990 kbps)",
+        "price": "250",
+        "quantity": "1",
+        "on_sale": "1",
+        "id": "2501"
+      },
+      {
+        "name": "COWIN E7 PRO - Red",
+        "specs": "1200XM3 Wireless Headphones 40 Hz40,000 Hz (54 kHz Sampling)/40 Hz60,000 Hz (LDAC 120 kHz Sampling, 800 kbps)",
+        "price": "350",
+        "quantity": "20",
+        "on_sale": "1",
+        "id": "2502"
+      }
+    ],
+    "_id": "2500",
+    "category": {
+      "id": "4600",
+      "name": "Headphones"
+    },
+    "vendor": {
+      "id": "5600",
+      "name": "Sony ",
+      "phone": "4846531876",
+      "email": "sony@gmail.com"
+    }
+  },
+  {
+    "name": "COWIN E7 PRO",
+    "descriptions": "Active Noise Cancelling Headphone Bluetooth Headphones with Microphone Hi-Fi Deep Bass Wireless Headphones Over Ear 30H Playtime for Travel Work TV Computer Phone",
+    "options": [
+      {
+        "name": "COWIN E7 PRO - Pink",
+        "specs": "Sony IER-M7 In-ears Headphone. Driver Unit by Quad-balanced armature. Frequency Response 5 Hz20,000 Hz",
+        "price": "800",
+        "quantity": "9",
+        "on_sale": "0",
+        "id": "2601"
+      },
+      {
+        "name": "COWIN E7 PRO - White",
+        "specs": "Sony IER-M9 In-ears Headphone. Driver Unit by Penta Balanced Armature. Frequency Response 10 Hz40,000 Hz",
+        "price": "900",
+        "quantity": "60",
+        "on_sale": "1",
+        "id": "2602"
+      }
+    ],
+    "_id": "2600",
+    "category": {
+      "id": "4600",
+      "name": "Headphones"
+    },
+    "vendor": {
+      "id": "5600",
+      "name": "Sony ",
+      "phone": "4846531876",
+      "email": "sony@gmail.com"
+    }
+  },
+  {
+    "name": "Ipad Mini 3th gen",
+    "descriptions": "3th gen Everything you love about iPad \ufffd the beautiful screen and fast",
+    "options": [
+      {
+        "name": "Ipad Mini 7.9-inch",
+        "specs": "Ipad Mini 7.9-inch (diagonal) LED-backlit Multi-Touch display with IPS technology",
+        "price": "499",
+        "quantity": "40",
+        "on_sale": "1",
+        "id": "1801"
+      },
+      {
+        "name": "Ipad Mini 10-inch",
+        "specs": "Ipad Mini 10-inch (diagonal) LED-backlit Multi-Touch display with IPS technology",
+        "price": "599",
+        "quantity": "100",
+        "on_sale": "1",
+        "id": "1802"
+      }
+    ],
+    "_id": "1800",
+    "category": {
+      "id": "4200",
+      "name": "Tablets"
+    },
+    "vendor": {
+      "id": "5200",
+      "name": "Lenovo ",
+      "phone": "3215689466",
+      "email": "lenovo@gmail.com"
+    }
+  }
+]
