@@ -329,9 +329,9 @@ bq --project_id=${GCP_PROJECT} \
 
 [使用 Cloud Shell](https://console.cloud.google.com/home/dashboard?cloudshell=true)
 
-在此段落，我們將會一次性的把 __products__ 和 __orders__ 兩張資料表合併成一張寬表 _(因為 BigQuery 不建議 JOIN，所以避免人員後續分析不斷的執行 JOIN，所以我們會預先做好)_
-
 > 請確認專案名稱是否為您想進行沙盒的專案
+
+在此段落，我們將會一次性的把 __products__ 和 __orders__ 兩張資料表合併成一張寬表 _(因為 BigQuery 不建議 JOIN，所以避免人員後續分析不斷的執行 JOIN，所以我們會預先做好)_
 
 ```bash
 # Define GCP_PROJECT
