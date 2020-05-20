@@ -63,6 +63,8 @@
 
 > 請確認專案名稱是否為您想進行沙盒的專案
 
+以下範例為了環境便利將會以 Docker 來進行展示
+
 ```bash
 # Define GCP_PROJECT
 export GCP_PROJECT="your-project"
@@ -76,7 +78,7 @@ gcloud beta compute \
   --maintenance-policy=MIGRATE \
   --tags=default-allow-ssh,default-allow-internal \
   --scopes=https://www.googleapis.com/auth/cloud-platform \
-  --image=cos-69-10895-385-0 \
+  --image-family=cos-stable \
   --image-project=cos-cloud \
   --boot-disk-size=100GB \
   --boot-disk-type=pd-standard \
@@ -244,7 +246,7 @@ docker run \
 
 使用 [WebSSH](https://cloud.google.com/compute/docs/ssh-in-browser) 連線至 GCE Instance 並執行指令
 
-在下列指令中，我們將會建立使用 Docker 建立一個資料萃取的執行環境將資料從 MySQL 和 MongoDb 取出並上傳到 Google Cloud Storage 中。
+在下列指令中，我們將會使用 Docker 建立一個資料萃取的執行環境把資料從 MySQL 和 MongoDb 取出並上傳到 Google Cloud Storage 中。
 
 ```bash
 # go to data-integration directory
@@ -294,6 +296,14 @@ docker run -it \
   example-cronjob mongo
 ```
 
+在 `docker build ...` 中，我們使用 `src/cronjob/Dockerfile` 檔案建立一個 Python 的執行環境並安裝了 MySQL 和 MongoDb 的連接器 (connector): `PyMySQL` 和 `pymongo`，並且將 `src/cronjob/dump.py` 當作 docker image 的入口點 (entrypoint)
+
+在 `docker run -it ...` 的時候，我們把使用者的 `${HOME}/.config/gcloud` 掛載到容器的 `/root/.config/gcloud` 此舉是為了讓容器在執行的時候具有 gcloud 的權限，而該權限則是來自 GCE Instance 上的 credentials (若不是 GCE Instance 的話則要另外產生 access-key 並下載，請參考[官方文件](https://cloud.google.com/iam/docs/creating-managing-service-account-keys))
+
+在 `src/cronjob/dump.py` 中預設了兩個指令: mongo 和 mysql 分別對應到 MySQL 和 MongoDb 簡易的資料萃取邏輯: 連接資料庫、擷取資料、轉換為 [JSON Lines](http://jsonlines.org/) 格式、上傳到 GCS Bucket。
+
+> 轉換為 JSON Lines 格式是為了方便後續的 [Loading JSON into BigQuery](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-json)
+
 ### 資料載入
 
 [使用 Cloud Shell](https://console.cloud.google.com/home/dashboard?cloudshell=true)
@@ -331,7 +341,7 @@ bq --project_id=${GCP_PROJECT} \
 
 > 請確認專案名稱是否為您想進行沙盒的專案
 
-在此段落，我們將會一次性的把 __products__ 和 __orders__ 兩張資料表合併成一張寬表 _(因為 BigQuery 不建議 JOIN，所以避免人員後續分析不斷的執行 JOIN，所以我們會預先做好)_
+在此段落，我們將會一次性的把 __products__ 和 __orders__ 兩張資料表合併成一張寬表。
 
 ```bash
 # Define GCP_PROJECT
@@ -343,6 +353,43 @@ cat src/etl/etl.sql | bq --project_id=${GCP_PROJECT} \
   --use_legacy_sql=false \
   --destination_table ikala_data_integration_sandbox.full_orders
 ```
+
+- etl.sql
+
+  ```sql
+  SELECT
+    orders.user_id,
+    orders.order_id,
+    orders.order_date,
+    orders.product_id,
+    orders.option_id,
+    flat_products.* EXCEPT(product_id, option_id),
+    orders.* EXCEPT(user_id, order_id, product_id, option_id, order_date)
+  FROM (
+      -- flatten products.OPTIONS
+      SELECT
+        products.id AS product_id,
+        products.name AS product_name,
+        products.descriptions AS product_descriptions,
+        category.id AS category_id,
+        category.name AS category_name,
+        vendor.id AS vendor_id,
+        vendor.name AS vendor_name,
+        vendor.email AS vendor_email,
+        vendor.phone AS vendor_phone,
+        OPTIONS.id AS option_id,
+        OPTIONS.name AS option_name,
+        OPTIONS.quantity AS option_quantity,
+        OPTIONS.on_sale AS option_on_sale,
+        OPTIONS.price AS option_price,
+        OPTIONS.specs AS option_specs
+      FROM ikala_data_integration_sandbox.products, products.OPTIONS
+    ) flat_products, ikala_data_integration_sandbox.orders 
+  WHERE
+    orders.product_id = flat_products.product_id AND orders.option_id = flat_products.option_id
+  ORDER BY
+    order_date DESC, user_id, order_id, product_id, option_id
+  ```
 
 ### 小結
 
