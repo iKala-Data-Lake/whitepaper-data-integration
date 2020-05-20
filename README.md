@@ -174,7 +174,7 @@ export MONGODB_CONTAINER_NAME="mongodb_container"
 export MONGODB_USER="mongo"
 export MONGODB_PASSWORD="12345678"
 
-# launch a mongodb container in backgroup and give name: mongodb_container
+# launch a mongodb container in background and give name: mongodb_container
 docker run \
   --name $MONGODB_CONTAINER_NAME \
   --detach \
@@ -222,7 +222,7 @@ docker run \
   --link ${MONGODB_CONTAINER_NAME} \
   example-api
 
-# launch logstash container for pipe API server access-loog into bigquery
+# launch logstash container for pipe API server access-log into bigquery
 docker run \
   --name ${LOGSTASH_CONTAINER_NAME} \
   --detach \
